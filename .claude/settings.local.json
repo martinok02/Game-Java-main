@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed 's/.*\\\\.//')",
+      "PowerShell($j = Get-ChildItem \"C:\\\\Program Files\\\\Java\" -Recurse -Filter javap.exe -ErrorAction SilentlyContinue | Select-Object -First 1; if \\($null -eq $j\\) { \"no javap\" } else { $j.FullName; & $j.FullName -p \"src\\\\estructuras\\\\Lista.class\" \"src\\\\estructuras\\\\Pila.class\" \"src\\\\estructuras\\\\Cola.class\"; & $j.FullName -v \"src\\\\estructuras\\\\Lista.class\" | Select-String \"major version|interfaces:|Signature: #|Code:|flags: \\\\\\(0x0401\\\\\\)|flags: \\\\\\(0x0001\\\\\\)\" | Select-Object -First 30 })",
+      "Bash(find C:/Users/marti/Desktop/FACULTAD/Game-Java-main -type f -newermt '2026-10-30 10:26' -not -path */.claude/*)",
+      "Bash(mkdir -p mundo)",
+      "Bash(mv reglas/Camino.java reglas/Coordenada.java reglas/PruebaCamino.java mundo/)",
+      "Bash(sed -i 's/^package juego\\\\.reglas;/package juego.mundo;/' mundo/Camino.java mundo/Coordenada.java mundo/PruebaCamino.java)",
+      "Read(//c/Users/marti/Downloads/**)",
+      "Bash(tar -tzvf C:/Users/marti/Downloads/TowerDefence.tar.gz)",
+      "Bash(tar --force-local -tzf C:/Users/marti/Downloads/TowerDefence.tar.gz)",
+      "Bash(xargs wc -l)",
+      "Bash(sort -k3)"
+    ]
+  }
+}
